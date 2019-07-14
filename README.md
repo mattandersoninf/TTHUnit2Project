@@ -1,2 +1,2 @@
 # TTHUnit2Project
-Mobile responsive layout project
+This project is to showcase my ability to design a mobile responsive webpage.

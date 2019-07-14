@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
+
+html{
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	text-align:center;
+	background: url("../images/railparkbackgroundimg.jpg") no-repeat top center;
+	background-size: cover;
+	overflow: hidden;
+	padding: 120px 0px 10px 0px;
+	line-height: 1.5;
+}
+
+header .profile-image{
+	width:150px;
+	height:150px;
+	border-radius: 50%;
+	border: 3px solid #0040ff;
+	transition: all .5s;
+}
+
+header .profile-image:hover {
+	transform: scale(1.2) rotate(360deg);
+}
+
+* {
+	box-sizing: border-box; 
+}
+
+
+body{
+	margin:0;
+	padding: 0;
+	color: #ffffff;
+	background: #a9a9a9;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a.photographer{
+	transition: 0.3s;
+}
+
+a.photographer:hover{
+	color:#0040ff;
+}
+
+footer{
+	padding-bottom: 30px;
+	background: #ffffff;
+}
+
+.footer-header{
+	padding-top: 50px;
+	padding-bottom: 15px;
+	color: #a9a9a9;
+}
+
+h2.body-header, h2.footer-header{
+	text-align: center;
+}
+
+h2.profile-message{
+	text-align:center;
+	padding-top: 50px;
+	padding-bottom: 400px;
+}
+
+section{
+	padding: 0px;
+	margin: 0 auto;
+}
+
+li{
+	list-style-type: none;
+	display: block;
+	width: 60px;
+	opacity: 0.8;
+	transition: 0.3s;
+	margin-bottom: 10px;
+}
+
+li.nav-item{
+	border-color: #ffffff;
+	padding: 5px 3px 5px 3px;
+	display: inline;
+	transition: all .3s;
+	text-align: center;
+}
+
+li.social-media, li.skill{
+	padding: 5px 10px 5px 10px;
+	display: inline;
+	transition: all .3s;
+}
+
+li.nav-item:hover{
+	transform:scale(1.5);
+}
+
+li.skill{
+	padding: 8px 5px 8px 5px;
+	background: #5b29f2;
+	color: #ffffff;
+	border-radius: 3px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.company, .title, .yr{
+	padding: 5px 0px 5px 0px;
+	text-align: left;
+}
+
+.container{
+	position:relative;
+	text-align:center;
+	color:#ffffff;
+}
+
+.bottom-left{
+	position: absolute;
+	padding-bottom: 10px;
+	left: 100px;
+}
+
+img.background-image{
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+	height: 220px;
+	border: 3px solid #0040ff;
+}
+
+li.skill:hover{
+	background: #5b29f2;
+	opacity: 1;
+}
+
+li.nav-item:hover{
+	background-color: #000000;
+	opacity: 1;
+}
+
+p{
+	padding: 3px;
+}
+
+p.copyright{
+	color: #000000;
+	text-align:center;
+	padding-top:30px;
+}
+
+ul.exps{
+	padding: 20px 190px 20px 10px;
+	background: #00e025;
+	color: #ffffff;
+	border-radius: 3px;
+	opacity: 0.8;
+	transition:0.3s;
+}
+
+ul.exps:hover{
+	background: #00e025;
+	color: #ffffff;
+	border-radius: 3px;
+	opacity:1;
+}
+
+ul.footer-icons{
+	display: inline;
+}
+
+ul.nav{
+	position: relative;
+	padding-left: 0px;
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 3%;
+	padding-left: 15px;
+	padding-top: 0px;
+}
+
+.card {
+	margin: 30px;
+	padding: 20px 40px 40px;
+	max-width: 500px;
+	text-align: left;
+	background: #fff;
+	border-bottom: 4px solid #ccc;
+	border-radius: 6px;
+	transition: all .5s;
+	color:#000000;
+}
+
+.card:hover{
+	border-color: #0040ff;
+}
+
+.centered {
+	position: absolute;
+	top : 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.home-image{
+	width: 100%;
+}
+
+.main-nav{
+	display: flex;
+	width: 100%;
+	height: 85px;
+	background: #000000;
+	text-align:center;
+	position: fixed;
+}
+
+.name-highlight{
+	color: #0040ff;
+}
+
+.photo-cred{
+	text-align: left;
+	padding: 10px 15px 30px 15px;
+}
+
+.sm-icon{
+	width:64px;
+}
+
+.table{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	margin: 0 auto;
+	position: fixed;
+}
+
+@media screen and (min-width: 720px) {
+	.flex {
+		display: -ms-flexbox;      /* TWEENER - IE 10 */
+		display: flex; 
+		max-width: 1500px;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		margin: 0 auto;
+	}
+
+}
+
+/* For each of the flex boxes, make sure to be adjustable for the top background image in particular and make sure the subsection paragraphs don't collapse on themselves*/
+
+@media screen and (min-width: 320px){
+	
+	.main-nav{
+		position: fixed;
+		padding: 5px 0px 5px 0px;
+		justify-content: center;
+	}
+
+	.profile-image{
+		margin-top: 60px;
+	}
+
+	.nav-item{
+		padding: 3px 5px 3px 5px;
+	}
+
+	header{
+		width: 100%;
+		overflow: auto;
+	}
+
+}
+
+@media screen and (min-width: 768px){
+	.main-nav{
+		justify-content: flex-end; /* flex-end is smart enough to justify horizontally and veritcally to the far end (horiz = right, vertical = bottom)*/
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.main-nav{
+		justify-content: flex-end; /* flex-end is smart enough to justify horizontally and veritcally to the far end (horiz = right, vertical = bottom)*/
+	}
+}
