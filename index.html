@@ -12,63 +12,78 @@
 		<link rel="stylesheet" href="css/normalize.css">
 	</head>
 	<body>
-		<!-- Body (The main part of the webpage)-->
-		<!-- This section will be used for showing the progress of loading the page, will implement later with JS -->
-		<!-- Add content to make it adjustable in css-->
-		<div class="main-nav">
-			<div class="table">
-				<ul class="nav">
-					<li class="nav-item"><a href="index.html"><b>Home</b></a></li>
-					<li class="nav-item"><a href="#background"><b>Portfolio</b></a></li>
-					<li class="nav-item"><a href="#goals"><b>Contact</b></a></li>
-				</ul>
-			</div>
-		</div>
-		<header class="profile-img">
-			<div class="header-background">
-				<img class="profile-image" src = "images/profile.jpg" alt="Matt Anderson">
-				<h2 class="profile-message">Hi there. My name is <span class="name-highlight">Matt Anderson</span>.<br>
-									And welcome to my website!	</h2>
-				<!-- The target blank allows the href link to open up in a new tab-->
-				<div class="photo-cred" id="backgound-info-source"><b>Photo by <a href="https://www.instagram.com/weschengphoto/" target="_blank" class="photographer">Wes Cheng</a></b></div>
+		<header>
+			<div class="main-nav">
+				<div class="main-title">Matthew Anderson</div>
+				<div class="table">
+					<ul class="nav">
+						<li class="nav-item"><a href="index.html"><b>Home</b></a></li>
+						<li class="nav-item"><a href="#portfolio"><b>Portfolio</b></a></li>
+						<li class="nav-item"><a href="#contact"><b>Contact</b></a></li>
+					</ul>
+				</div>
 			</div>
 		</header>
+		<div class="home">
+			<div class="home-image">
+				<img class="profile-image" src = "images/profile.jpg" alt="Matt Anderson">
+				<!-- The target blank allows the href link to open up in a new tab-->
+				<!--
+				<div class="photo-cred" id="backgound-info-source"><b>Photo by <a href="https://www.instagram.com/weschengphoto/" target="_blank" class="photographer">Wes Cheng</a></b></div>
+				-->
+			</div>
+			<div class="home-text">	
+					<h2 class="profile-message">Hi there. My name is <span class="name-highlight">Matt Anderson</span>.<br>
+						This is my first project centered around responsive design and css. Welcome! </h2>
+			</div>
+		</div>
 		<!-- The main content for the webpage-->
 		<main class="flex">
-			<div class="card" id="background">
-				<h2 class="body-header">Background</h2>
-				<div class="container">
-					<img src="images/profile1.jpg" alt="profile1" class="background-image">
-					<div class="bottom-left"><b>Photo by <a href="https://www.instagram.com/weschengphoto/" target="_blank" class="photographer">Wes Cheng</a></b></div>
-				</div>
-				<p>Currently an electical engineer who likes to dabble in programming in my free time. 
-					Whether it be improving my knowledge with making websites, scripting to make my
-					career tasks or daily tasks easier, or collaborating on builds with friends:
-					it's not uncommon to find me on my laptop. Through programming, I can express my 
-					creativity on the web and challenge myself to build things that I may not have 
-					believed that I could, previously. My other interests include martial arts, tennis,
-					listening to audiobooks and podcasts, video games, engineering, and most recently, 
-					physical challenges like the Tough Mudder. 
-				</p>
-			</div>
-			<div class="card" id="goals">
-				<h2 class="body-header">Goals</h2>
-				<p>
-					My goals for programming is to be able to have the knowledge and skills to create
-					whatever websites and projects I can imagine. My main drive is to be a polymath
-					(<i>a person of wide-ranging knowledge or learning</i>) and to be proficient enough 
-					to communicate the knowledge and lessons that I have acquired effectively and help 
-					make the world suck a little less.<br><br>
-					"I want to make the world suck less with things that I do" - Alexis Ohanian
-				</p>
-				<p>I want to become more proficient in the following languages, frameworks, and tools:
-				</p>
-				<ul class="skills">
-					<li class="skill"><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>
-					<li class="skill"><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a></li>
-					<li class="skill"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></li>
-					<li class="skill"><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a></li>
-					<li class="skill"><a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a></li>
+			<div class="portfolio" id="portfolio">
+				<h2 class="body-header">Portfolio</h2>
+				<ul class="portfolio-projects">
+					<li class="portfoio-project">
+						<img src="">
+						<h2 class="portfolio-project-title"></h2>
+						<div class="portfolio-project-description">
+
+						</div>
+					</li>
+					<li class="portfoio-project">
+						<img src="">
+						<h2 class="portfolio-project-title"></h2>
+						<div class="portfolio-project-description">
+
+						</div>
+					</li>
+					<li class="portfoio-project">
+							<img src="">
+							<h2 class="portfolio-project-title"></h2>
+							<div class="portfolio-project-description">
+	
+							</div>
+					</li>
+					<li class="portfoio-project">
+						<img src="">
+						<h2 class="portfolio-project-title"></h2>
+						<div class="portfolio-project-description">
+
+						</div>
+					</li>
+					<li class="portfoio-project">
+						<img src="">
+						<h2 class="portfolio-project-title"></h2>
+						<div class="portfolio-project-description">
+
+						</div>
+					</li>
+					<li class="portfoio-project">
+						<img src="">
+						<h2 class="portfolio-project-title"></h2>
+						<div class="portfolio-project-description">
+
+						</div>
+					</li>
 				</ul>
 			</div>
 		</main>
