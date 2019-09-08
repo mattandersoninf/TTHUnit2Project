@@ -2,46 +2,33 @@
 
 
 html{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
+/* Header */
 header{
 	text-align:center;
 	background-size: cover;
 	overflow: hidden;
 	line-height: 1.5;
-	position: fixed;
 	display: flex;
-	width: 100%;
-	height: 85px;
-	background: #000000;
+	height: 40px;
 	text-align:center;
-	position: fixed;
 	border-bottom: 10px;
-	border-color: #000000;
 }
 
-.main-nav{
-	position:fixed;
-	padding-bottom: 10px;
-}
-
+/*
 .table{
 	padding-left: 5px;
 	padding-bottom: 5px;
-	padding-bottom: 15px;
+	padding-bottom: 15px; 
 	margin-left: auto;
 	margin-right: auto;
 	display: table;
 	margin: 0 auto;
-	position: fixed;
 	
 }
-
-.main-title{
-	font-size: 20px;
-	padding: 5px 0px 0px 10px;
-}
+*/
 
 header .profile-image{
 	width:150px;
@@ -63,13 +50,10 @@ header .profile-image:hover {
 body{
 	margin:0;
 	padding: 0;
-	color: #ffffff;
-	background: #a9a9a9;
 }
 
 a{
 	text-decoration: none;
-	color: #ffffff;
 }
 
 a.photographer{
@@ -82,7 +66,6 @@ a.photographer:hover{
 
 footer{
 	padding-bottom: 30px;
-	background: #ffffff;
 }
 
 .footer-header{
@@ -101,21 +84,18 @@ h2.profile-message{
 	padding-bottom: 400px;
 }
 
-li{
-	list-style-type: none;
-	display: block;
-	width: 60px;
-	opacity: 0.8;
-	transition: 0.3s;
-	margin-bottom: 10px;
-}
-
-li.nav-item{
-	border-color: #ffffff;
+.nav-item{
 	padding: 5px 3px 5px 3px;
-	display: inline;
+	display: block;
 	transition: all .3s;
 	text-align: center;
+	text-transform: uppercase;
+}
+
+.nav-item:hover{
+	transform:scale(1.5);
+	color: #000000;
+	opacity: 0.5;
 }
 
 li.social-media{
@@ -124,24 +104,21 @@ li.social-media{
 	transition: all .3s;
 }
 
-li.nav-item:hover{
-	transform:scale(1.5);
-}
 
 li.skill{
 	padding: 8px 5px 8px 5px;
 	background: #5b29f2;
-	color: #ffffff;
 	border-radius: 3px;
 	margin-top:10px;
 	margin-bottom:10px;
 }
 
+/*
 .container{
 	position:relative;
 	text-align:center;
-	color:#ffffff;
 }
+*/
 
 .bottom-left{
 	position: absolute;
@@ -149,13 +126,10 @@ li.skill{
 	left: 100px;
 }
 
-li.nav-item:hover{
-	background-color: #000000;
-	opacity: 1;
-}
 
 p{
 	padding: 3px;
+	size: 1.0em;
 }
 
 p.copyright{
@@ -167,7 +141,6 @@ p.copyright{
 ul.portfolio-projects{
 	padding: 20px 190px 20px 10px;
 	background: #00e025;
-	color: #ffffff;
 	border-radius: 3px;
 	opacity: 0.8;
 	transition:0.3s;
@@ -175,7 +148,6 @@ ul.portfolio-projects{
 
 ul.portfolio-projects:hover{
 	background: #00e025;
-	color: #ffffff;
 	border-radius: 3px;
 	opacity:1;
 }
@@ -219,10 +191,8 @@ ul.nav{
 /* For each of the flex boxes, make sure to be adjustable for the top background image in particular and make sure the subsection paragraphs don't collapse on themselves*/
 
 @media screen and (min-width: 320px){
-	
 	.main-nav{
-		position: fixed;
-		padding: 5px 0px 5px 0px;
+		padding: 5px 10px 5px 10px;
 		justify-content: center;
 	}
 
@@ -234,23 +204,52 @@ ul.nav{
 		padding: 3px 5px 3px 5px;
 	}
 
-	header{
-		width: 100%;
-		overflow: auto;
-	}
 
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px){	
 	.main-nav{
-		position: fixed;
 		justify-content: flex-end; /* flex-end is smart enough to justify horizontally and veritcally to the far end (horiz = right, vertical = bottom)*/
 	}
+	
+	.main-title{
+		font-size: 12px;
+	}
+
+	.nav-item{
+		font-size: 9px;
+	}
+
 }
 
 @media screen and (min-width: 1024px){
-	.main-nav{
-		position: fixed;
-		justify-content: flex-end; /* flex-end is smart enough to justify horizontally and veritcally to the far end (horiz = right, vertical = bottom)*/
+
+	.container{
+		display: flex;
+  		align-items: flex-start;
+  		justify-content: space-around;
 	}
+
+	.main-title{
+		font-size: 12px;
+		align-self: flex-end;
+	}
+
+	/*
+	.nav{
+		
+		padding: 5px 5px 5px 0.7em;
+		
+		display: flex;
+		margin: 0 auto 0 auto; 
+		align-self: flex-end;
+	}
+	*/
+
+	.nav-item{
+		font-size: 9px;
+		display: inline;
+	}
+
+
 }
