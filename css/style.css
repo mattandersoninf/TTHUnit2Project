@@ -5,52 +5,74 @@ html{
 	font-family: 'Montserrat', sans-serif;
 }
 
+/* Body */
+
+body{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background: #f8f8f8;
+}
+
+h2, h3, li, a, p{
+	color: #000000;
+	background: #ffffff;
+}
+
 /* Header */
 header{
 	text-align:center;
-	background-size: cover;
-	overflow: hidden;
 	line-height: 1.5;
 	display: flex;
-	height: 40px;
-	text-align:center;
+	width:100%;
 	border-bottom: 10px;
 }
 
-/*
-.table{
-	padding-left: 5px;
-	padding-bottom: 5px;
-	padding-bottom: 15px; 
+.container{
 	margin-left: auto;
 	margin-right: auto;
-	display: table;
+	width:90%;
+	text-align:center;
+}
+
+.main-title{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.nav{
 	margin: 0 auto;
-	
+}
+
+.nav-item{
+	list-style: none;
+	padding: 0.5em 1em;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 3px;
+}
+
+.nav-item:hover{
+	transform: translateY(-2px);
+	transition: 0.3s;
+	background: #8f8f8f;
+}
+
+/* Main */
+
+.profile-img{
+	width:100%
+}
+
+/*
+.home-image{
+	width: 100%;
+	background: url("../images/san_diego_evening_city_pic.png") no-repeat fixed center;
+	height: auto;
 }
 */
-
-header .profile-image{
-	width:150px;
-	height:150px;
-	border-radius: 50%;
-	border: 3px solid #0040ff;
-	transition: all .5s;
-}
-
-header .profile-image:hover {
-	transform: scale(1.2) rotate(360deg);
-}
-
-* {
-	box-sizing: border-box; 
-}
-
-
-body{
-	margin:0;
-	padding: 0;
-}
 
 a{
 	text-decoration: none;
@@ -84,19 +106,6 @@ h2.profile-message{
 	padding-bottom: 400px;
 }
 
-.nav-item{
-	padding: 5px 3px 5px 3px;
-	display: block;
-	transition: all .3s;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.nav-item:hover{
-	transform:scale(1.5);
-	color: #000000;
-	opacity: 0.5;
-}
 
 li.social-media{
 	padding: 5px 10px 5px 10px;
@@ -112,13 +121,6 @@ li.skill{
 	margin-top:10px;
 	margin-bottom:10px;
 }
-
-/*
-.container{
-	position:relative;
-	text-align:center;
-}
-*/
 
 .bottom-left{
 	position: absolute;
@@ -169,11 +171,6 @@ ul.nav{
 }
 
 
-.home-image{
-	width: 100%;
-}
-
-
 .name-highlight{
 	color: #0040ff;
 }
@@ -187,25 +184,6 @@ ul.nav{
 	width:64px;
 }
 
-
-/* For each of the flex boxes, make sure to be adjustable for the top background image in particular and make sure the subsection paragraphs don't collapse on themselves*/
-
-@media screen and (min-width: 320px){
-	.main-nav{
-		padding: 5px 10px 5px 10px;
-		justify-content: center;
-	}
-
-	.profile-image{
-		margin-top: 60px;
-	}
-
-	.nav-item{
-		padding: 3px 5px 3px 5px;
-	}
-
-
-}
 
 @media screen and (min-width: 768px){	
 	.main-nav{
@@ -234,22 +212,5 @@ ul.nav{
 		font-size: 12px;
 		align-self: flex-end;
 	}
-
-	/*
-	.nav{
-		
-		padding: 5px 5px 5px 0.7em;
-		
-		display: flex;
-		margin: 0 auto 0 auto; 
-		align-self: flex-end;
-	}
-	*/
-
-	.nav-item{
-		font-size: 9px;
-		display: inline;
-	}
-
 
 }

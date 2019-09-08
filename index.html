@@ -13,33 +13,31 @@
 	</head>
 	<body>
 		<header>
-			<div class="main-nav">
-				<div class="main-title">Matthew Anderson</div>
+			<div class="container">
+				<h1 class="main-title">Matthew Anderson</h1>
 				<ul class="nav">
-					<li class="nav-item"><a href="index.html"><b>Home</b></a></li>
-					<li class="nav-item"><a href="#portfolio"><b>Portfolio</b></a></li>
-					<li class="nav-item"><a href="#contact"><b>Contact</b></a></li>
+					<a href="index.html" class="nav-item"><li>Home</li></a>
+					<a href="#portfolio" class="nav-item"><li>Portfolio</li></a>
+					<a href="#contact" class="nav-item"><li>Contact</li></a>
 				</ul>
+				<div class="profile-container"></div>
 			</div>
 		</header>
-		<div class="home">
-			<div class="home-image">
-				<img class="profile-image" src = "images/profile.jpg" alt="Matt Anderson">
-				<!-- The target blank allows the href link to open up in a new tab-->
-				<!--
-				<div class="photo-cred" id="backgound-info-source"><b>Photo by <a href="https://www.instagram.com/weschengphoto/" target="_blank" class="photographer">Wes Cheng</a></b></div>
-				-->
-			</div>
-			<div class="home-text">	
-					<p class="profile-message">
-						Hi! I'm an electrical engineer that is also working on learning 
-						front-end development and more recently, responsive design. I am 
-						very excited to put those skills to use.
-					</p>
-			</div>
-		</div>
+		
 		<!-- The main content for the webpage-->
 		<main class="flex">
+			<div class="home">
+				<picture>
+					<img src="images/san_diego_evening_city_pic.png" alt="Profile" class="profile-img">
+				</picture>
+				<div class="home-text">	
+						<p class="profile-message">
+							Hi! I'm an electrical engineer that is also working on learning 
+							front-end development and more recently, responsive design. I am 
+							very excited to put those skills to use.
+						</p>
+				</div>
+			</div>
 			<div class="portfolio" id="portfolio">
 				<h2 class="body-header">Portfolio</h2>
 				<ul class="portfolio-projects">
