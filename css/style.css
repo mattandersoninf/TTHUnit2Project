@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6{
 
 a{
 	text-decoration: none;
+	color: black;
 }
 
 li{
@@ -35,7 +36,7 @@ body{
 }
 
 p{
-	font-size: 1.5rem;
+	font-size: 16px;
 }
 
 /* Header */
@@ -86,13 +87,9 @@ header{
 
 /* Main */
 
-.flex{
+#portfolio{
 	padding-top: 10px;
 	background: white;
-}
-
-#portfolio{
-	display:inline-block;
 	padding: 3%;
 }
 
@@ -100,10 +97,9 @@ header{
 	text-transform: uppercase;
 }
 
-.portfolio-img{
+img.portfolio-img{
 	width: 100%;
-	padding: 5px 0px 5px 0px;
-	margin: 3px;
+	padding: 5px 3px 5px 3px;
 	display: inline-block;
 }
 
@@ -117,26 +113,29 @@ footer{
 	color: #a9a9a9;
 }
 
-li.social-media{
-	padding: 5px 10px 5px 10px;
-	display: inline;
-	transition: all .3s;
+.footer-p{
+	padding: 5px;
+	margin: 10px 0px 10px 0px;
 }
 
-
-li.skill{
-	padding: 8px 5px 8px 5px;
-	background: #5b29f2;
-	border-radius: 3px;
-	margin-top:10px;
-	margin-bottom:10px;
+.footer-name{
+	padding: 3px;
+	margin: 3px;
+	float: left;
+	font-size: 14px;
 }
 
-.bottom-left{
-	position: absolute;
-	padding-bottom: 10px;
-	left: 100px;
+.footer-button{
+	padding: 3px;
+	margin: 3px;
+	float:right;
+	font-size: 12px;
 }
+
+.footer-button:hover{
+	background: #8f8f8f;
+}
+
 
 /*
 @media screen and (min-width: 768px){	
