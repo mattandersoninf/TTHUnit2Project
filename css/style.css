@@ -93,6 +93,7 @@ header{
 
 #portfolio{
 	display:inline-block;
+	padding: 3%;
 }
 
 .main-header{
@@ -100,7 +101,7 @@ header{
 }
 
 .portfolio-img{
-	width: 300px;
+	width: 100%;
 	padding: 5px 0px 5px 0px;
 	margin: 3px;
 	display: inline-block;
