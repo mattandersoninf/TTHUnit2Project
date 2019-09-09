@@ -1,8 +1,23 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+/* Teamtreehouse Unit 2 Project Stylesheet */
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
-
-html{
+div, p, li, a{
+    font-family:'Nanum Gothic', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
 	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
 }
 
 /* Body */
@@ -12,46 +27,45 @@ body{
 	margin-right: auto;
 	text-align: center;
 	background: #f8f8f8;
+	margin: 8px;
 }
 
-h2, h3, li, a, p{
-	color: #000000;
-	background: #ffffff;
+.wrapper{
+	padding:3%;
+}
+
+p{
+	font-size: 1.5rem;
 }
 
 /* Header */
 header{
-	text-align:center;
+	text-align: center;
 	line-height: 1.5;
-	display: flex;
 	width:100%;
 	border-bottom: 10px;
 }
 
-.container{
-	margin-left: auto;
-	margin-right: auto;
-	width:90%;
-	text-align:center;
-}
-
 .main-title{
-	padding-top: 5px;
-	padding-bottom: 5px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 10px;
 }
 
-.nav{
-	margin: 0 auto;
+.container{
+	width:90%;
+	text-align: center;
+	margin: 0 auto; 
 }
 
 .nav-item{
-	list-style: none;
-	padding: 0.5em 1em;
+	padding: 0.5em 1em 0.5em 1em;
 	display: block;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
 	margin: 3px;
+	background: white;
 }
 
 .nav-item:hover{
@@ -60,30 +74,36 @@ header{
 	background: #8f8f8f;
 }
 
+.profile-img{
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.profile-message{
+	margin: 5px 0px 15px 0px;
+}
+
 /* Main */
 
-.profile-img{
-	width:100%
+.flex{
+	padding-top: 10px;
+	background: white;
 }
 
-/*
-.home-image{
-	width: 100%;
-	background: url("../images/san_diego_evening_city_pic.png") no-repeat fixed center;
-	height: auto;
-}
-*/
-
-a{
-	text-decoration: none;
+#portfolio{
+	display:inline-block;
 }
 
-a.photographer{
-	transition: 0.3s;
+.main-header{
+	text-transform: uppercase;
 }
 
-a.photographer:hover{
-	color:#0040ff;
+.portfolio-img{
+	width: 300px;
+	padding: 5px 0px 5px 0px;
+	margin: 3px;
+	display: inline-block;
 }
 
 footer{
@@ -95,17 +115,6 @@ footer{
 	padding-bottom: 15px;
 	color: #a9a9a9;
 }
-
-h2.body-header, h2.footer-header{
-	text-align: center;
-}
-
-h2.profile-message{
-	text-align:center;
-	padding-top: 50px;
-	padding-bottom: 400px;
-}
-
 
 li.social-media{
 	padding: 5px 10px 5px 10px;
@@ -128,66 +137,11 @@ li.skill{
 	left: 100px;
 }
 
-
-p{
-	padding: 3px;
-	size: 1.0em;
-}
-
-p.copyright{
-	color: #000000;
-	text-align:center;
-	padding-top:30px;
-}
-
-ul.portfolio-projects{
-	padding: 20px 190px 20px 10px;
-	background: #00e025;
-	border-radius: 3px;
-	opacity: 0.8;
-	transition:0.3s;
-}
-
-ul.portfolio-projects:hover{
-	background: #00e025;
-	border-radius: 3px;
-	opacity:1;
-}
-
-ul.footer-icons{
-	display: inline;
-}
-
-ul.nav{
-	position: relative;
-	padding-left: 0px;
-}
-
-.bottom-left {
-	position: absolute;
-	bottom: 3%;
-	padding-left: 15px;
-	padding-top: 0px;
-}
-
-
-.name-highlight{
-	color: #0040ff;
-}
-
-.photo-cred{
-	text-align: left;
-	padding: 10px 15px 30px 15px;
-}
-
-.sm-icon{
-	width:64px;
-}
-
-
+/*
 @media screen and (min-width: 768px){	
 	.main-nav{
 		justify-content: flex-end; /* flex-end is smart enough to justify horizontally and veritcally to the far end (horiz = right, vertical = bottom)*/
+/*
 	}
 	
 	.main-title{
@@ -214,3 +168,4 @@ ul.nav{
 	}
 
 }
+*/
