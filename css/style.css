@@ -14,7 +14,12 @@ h1, h2, h3, h4, h5, h6{
 
 a{
 	text-decoration: none;
+	color:#707070;
+}
+
+a:hover{
 	color: black;
+	transition: 0.5s;
 }
 
 li{
@@ -91,6 +96,7 @@ header{
 	padding-top: 10px;
 	background: white;
 	padding: 3%;
+	border: 5px solid orange;
 }
 
 .main-header{
@@ -155,6 +161,11 @@ footer{
 @media screen and (min-width: 768px){	
 
 	/* Header */
+
+	.main-title{
+		font-size:2rem;
+	}
+
 	.nav{
 		list-style: none;
 		margin: 0;
@@ -229,15 +240,28 @@ footer{
 
 @media screen and (min-width: 1024px){
 
-	.container{
+	.main-title-and-nav-container{
 		display: flex;
-  		align-items: flex-start;
-  		justify-content: space-around;
+		flex-direction: row;
+		margin: auto;
+		justify-content: flex-end;
 	}
 
 	.main-title{
-		font-size: 12px;
-		align-self: flex-end;
+		margin-right: auto;
+		justify-content: flex-end;
+		text-align: none;
+	}
+
+	.nav-container{
+		margin-left: auto;
+	}
+
+	.portfolio-project{
+		float: left;
+		width: 33%;
+		padding: 3px;
+		margin: auto;
 	}
 
 }
