@@ -201,7 +201,8 @@ footer{
 	.portfolio-project{
 		float: left;
 		width: 50%;
-		padding: 1%;
+		padding: 3px;
+		margin: auto;
 	}
 
 	.footer-name{
@@ -225,7 +226,7 @@ footer{
 
 /* 1024px */
 
-/*
+
 @media screen and (min-width: 1024px){
 
 	.container{
@@ -240,10 +241,5 @@ footer{
 	}
 
 }
-*/
 
 /* 1024px End */
-
-.nav-container::after{
-	display:table;
-}
