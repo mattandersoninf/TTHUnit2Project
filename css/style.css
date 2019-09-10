@@ -19,6 +19,7 @@ a{
 
 li{
 	list-style: none;
+	text-transform: uppercase;
 }
 
 /* Body */
@@ -63,7 +64,6 @@ header{
 	padding: 0.5em 1em 0.5em 1em;
 	display: block;
 	text-align: center;
-	text-transform: uppercase;
 	font-weight: bold;
 	margin: 3px;
 	background: white;
@@ -103,6 +103,10 @@ img.portfolio-img{
 	display: inline-block;
 }
 
+/* Main  End*/
+
+/* Footer */
+
 footer{
 	padding-bottom: 30px;
 }
@@ -118,11 +122,19 @@ footer{
 	margin: 10px 0px 10px 0px;
 }
 
+.back-to-top{
+	padding-top: 1em;
+}
+
 .footer-name{
 	padding: 3px;
 	margin: 3px;
 	float: left;
 	font-size: 14px;
+}
+
+.footer-nav{
+	display: none;
 }
 
 .footer-button{
@@ -136,24 +148,84 @@ footer{
 	background: #8f8f8f;
 }
 
+/* Footer End */
 
-/*
+/* 768px */
+
 @media screen and (min-width: 768px){	
-	.main-nav{
-		justify-content: flex-end; /* flex-end is smart enough to justify horizontally and veritcally to the far end (horiz = right, vertical = bottom)*/
-/*
+
+	/* Header */
+	.nav{
+		list-style: none;
+		margin: 0;
+		padding: 0;
 	}
-	
-	.main-title{
-		font-size: 12px;
+
+	.nav-container{
+		display:table;
+		margin: auto;
 	}
 
 	.nav-item{
-		font-size: 9px;
+		float: left;
+		background: none;
+	}
+
+	picture, .home-text{
+		float: right;
+		width: 50%;
+		margin: auto;
+		padding: 5px;
+	}
+
+	.profile-message{
+		margin-top: 5%;
+		font-size: 1.4em;
+		margin-bottom: 5%;
+	}
+
+	.home{
+		display: table;
+		margin: auto;
+	}
+
+	.home-text{
+		float: left;
+	}
+
+	main .container{
+		display: table;
+		margin: auto;
+	}
+
+	.portfolio-project{
+		float: left;
+		width: 50%;
+		padding: 1%;
+	}
+
+	.footer-name{
+		font-size: 1.8rem;
+	}
+
+	.footer-nav{
+		display:inline-block;
+		margin: auto;
+		float: right;
+	}
+
+	.footer-button{
+		display: none;
 	}
 
 }
 
+
+/* 768px End */
+
+/* 1024px */
+
+/*
 @media screen and (min-width: 1024px){
 
 	.container{
@@ -169,3 +241,9 @@ footer{
 
 }
 */
+
+/* 1024px End */
+
+.nav-container::after{
+	display:table;
+}
