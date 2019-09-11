@@ -206,6 +206,7 @@ footer{
 		margin-top: 5%;
 		font-size: 1.4em;
 		margin-bottom: 5%;
+		text-align: left;
 	}
 
 	.home{
@@ -279,6 +280,7 @@ footer{
 	.nav-container{
 		margin-right: 0;
 	}
+
 
 	.portfolio-project{
 		float: left;
