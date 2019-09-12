@@ -99,8 +99,7 @@ header{
 #portfolio, #skills{
 	padding-top: 10px;
 	background: white;
-	padding: 3%;
-	border: 5px solid blue;
+	border: 10px solid blue;
 }
 
 .body-header{
@@ -113,8 +112,11 @@ img.portfolio-img{
 	display: inline-block;
 }
 
+
 .portfolio-project-description{
-	max-width:95%;
+	max-width:90%;
+	max-height:150px;
+	margin:auto;
 }
 
 .skill{
@@ -230,7 +232,7 @@ footer{
 	.portfolio-project{
 		float: left;
 		width: 50%;
-		padding: 3px;
+		padding: 2px;
 		margin: auto;
 	}
 
@@ -285,16 +287,24 @@ footer{
 		margin-right: 0;
 	}
 
+	.portfolio-project{
+		padding: 5px 0px 5px 0px;
+	}
 
 	.portfolio-project{
 		float: left;
 		width: 33%;
-		padding: 2px;
-		margin: auto;
+		padding: 5px;
+		margin: 0;
+	}
+
+	.portfolio-project-description{
+		max-height: 140px;
+		max-width: 270px;	
 	}
 
 	body{
-		max-width: 1200px;
+		max-width: 1500px;
 		margin: auto;
 	}
 
