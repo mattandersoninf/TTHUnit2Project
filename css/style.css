@@ -5,20 +5,21 @@
 	padding: 0;
 }
 
-div, p, li, a{
+div, p, .skill{
     font-family:'Nanum Gothic', sans-serif;
 }
 h2, h3, h4{
 	font-family: 'Montserrat', sans-serif;
 }
 
-h1, .footer-name{
+h1, .footer-name, .nav-item{
 	font-family: 'Jomhuria', cursive;
 }
 
 a{
 	text-decoration: none;
 	color:#707070;
+	padding:5px;
 }
 
 a:hover{
@@ -37,7 +38,7 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	background: #f8f8f8;
+	background: orange;
 	margin: 8px;
 }
 
@@ -63,6 +64,7 @@ header{
 	padding-bottom: 10px;
 }
 
+
 .container{
 	width:90%;
 	text-align: center;
@@ -78,12 +80,6 @@ header{
 	background: white;
 }
 
-.nav-item:hover{
-	transform: translateY(-2px);
-	transition: 0.3s;
-	background: #8f8f8f;
-}
-
 .profile-img{
 	width: 100%;
 	padding-top: 5px;
@@ -96,10 +92,17 @@ header{
 
 /* Main */
 
+#portfolio{
+	background:white;
+}
+
 #portfolio, #skills{
 	padding-top: 10px;
-	background: white;
-	border: 10px solid blue;
+	width: 100%;
+}
+
+#skills{
+	background: #295bff;
 }
 
 .body-header{
@@ -112,6 +115,10 @@ img.portfolio-img{
 	display: inline-block;
 }
 
+.portfolio-project{
+	padding-bottom:5px;
+}
+
 
 .portfolio-project-description{
 	max-width:90%;
@@ -122,11 +129,9 @@ img.portfolio-img{
 .skill{
 	font-size:12px;
 	padding: 0.5em 1em 0.5em 1em;
-	background: blue;
 	color:white;
 	margin:5px;
 }
-
 
 /* Main  End*/
 
@@ -209,6 +214,7 @@ footer{
 	}
 
 	.profile-message{
+		color: white;
 		margin-top: 5%;
 		font-size: 1.4em;
 		margin-bottom: 5%;
@@ -236,6 +242,11 @@ footer{
 		margin: auto;
 	}
 
+	.portfolio-project-description{
+		max-height: 120px;
+		max-width: 360px;	
+	}
+
 	.skill-container{
 		display:table;
 		margin:auto;
@@ -247,13 +258,18 @@ footer{
 	}
 
 	.footer-name{
-		font-size: 1.8rem;
+		font-size: 20px;
+		margin-left: 0;
 	}
 
 	.footer-nav{
 		display:inline-block;
-		margin: auto;
+		margin-right: 0;
 		float: right;
+	}
+
+	.footer-nav .nav-item{
+		padding: 2px;
 	}
 
 	.footer-button{
@@ -280,7 +296,6 @@ footer{
 	.main-title{
 		margin-right: auto;
 		justify-content: flex-end;
-		text-align: none;
 	}
 
 	.nav-container{
@@ -300,7 +315,7 @@ footer{
 
 	.portfolio-project-description{
 		max-height: 140px;
-		max-width: 270px;	
+		max-width: 360px;	
 	}
 
 	body{
