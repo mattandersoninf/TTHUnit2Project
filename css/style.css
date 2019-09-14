@@ -1,19 +1,19 @@
 /* Teamtreehouse Unit 2 Project Stylesheet */
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Nanum+Gothic&display=swap');
+
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-div, p, .skill{
+div, p, a{
     font-family:'Nanum Gothic', sans-serif;
 }
-h2, h3, h4{
-	font-family: 'Montserrat', sans-serif;
-}
 
-h1, .footer-name, .nav-item{
-	font-family: 'Jomhuria', cursive;
+h1, h2, h3, h4{
+	font-family:'Kaushan Script', cursive;
 }
 
 a{
@@ -104,6 +104,7 @@ header{
 
 #skills{
 	background: #295bff;
+	padding: 5px 0px 5px 0px;
 }
 
 .body-header{
